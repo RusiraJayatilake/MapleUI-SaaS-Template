@@ -1,0 +1,61 @@
+{
+  "pricingData": [
+    {
+      "title": "Free",
+      "description": "For Beginners",
+      "bgcolor": "white",
+      "textcolor": "black",
+      "price": 0,
+      "subscriptiontype": "Free forever",
+      "content": [
+        {
+          "title": "1 user"
+        },
+        {
+          "title": "10 downloads per month"
+        },
+        {
+          "title": "Raster files"
+        }
+      ]
+    },
+    {
+      "title": "Standard",
+      "description": "For Developers",
+      "bgcolor": "white",
+      "textcolor": "black",
+      "price": 25,
+      "subscriptiontype": "monthly",
+      "content": [
+        {
+          "title": "1 user"
+        },
+        {
+          "title": "10 downloads per month"
+        },
+        {
+          "title": "Raster files"
+        }
+      ]
+    },
+    {
+      "title": "Enterprise",
+      "description": "For Companies",
+      "bgcolor": "white",
+      "textcolor": "black",
+      "price": 45,
+      "subscriptiontype": "annualy",
+      "content": [
+        {
+          "title": "100 user"
+        },
+        {
+          "title": "Unlimited downloads per month"
+        },
+        {
+          "title": "10 Raster files"
+        }
+      ]
+    }
+  ]
+}
