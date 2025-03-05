@@ -1,3 +1,4 @@
+"use client";
 import { CircleCheck } from "lucide-react";
 
 import { cn } from "@/src/lib/utils";
@@ -10,6 +11,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/src/components/ui/card";
+import { useRouter } from "next/navigation";
 
 type CardProps = React.ComponentProps<typeof Card> & {
   data?: {
@@ -24,7 +26,12 @@ type CardProps = React.ComponentProps<typeof Card> & {
 };
 
 export function PricingCards({ className, data, ...props }: CardProps) {
-  if (!data) return null;
+  const router = useRouter();
+
+  if (!data) {
+    return null;
+  }
+
   return (
     <Card
       className={cn(
@@ -61,7 +68,12 @@ export function PricingCards({ className, data, ...props }: CardProps) {
         </div>
       </CardContent>
       <CardFooter>
-        <Button className={`w-full rounded-full mt-20`}>Subscribe</Button>
+        <Button
+          className={`w-full rounded-full mt-20 cursor-pointer`}
+          onClick={() => router.push("/payment")}
+        >
+          Subscribe
+        </Button>
       </CardFooter>
     </Card>
   );

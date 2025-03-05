@@ -2,6 +2,7 @@ import { cn } from "@/src/lib/utils";
 import { Button } from "@/src/components/ui/button";
 import { Input } from "@/src/components/ui/input";
 import { Label } from "@/src/components/ui/label";
+import Link from "next/link";
 
 export function LoginFormTwo({
   className,
@@ -11,26 +12,8 @@ export function LoginFormTwo({
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <form>
         <div className="flex flex-col gap-6">
-          <div className="flex flex-col items-center gap-2">
-            {/* <a
-              href="#"
-              className="flex flex-col items-center gap-2 font-medium"
-            >
-              <div className="flex h-8 w-8 items-center justify-center rounded-md">
-                <GalleryVerticalEnd className="size-6" />
-              </div>
-              <span className="sr-only">Acme Inc.</span>
-            </a> */}
-            <h1 className="text-xl font-bold">Welcome to Acme Inc.</h1>
-            <div className="text-center text-sm">
-              Don&apos;t have an account?{" "}
-              <a href="#" className="underline underline-offset-4">
-                Sign up
-              </a>
-            </div>
-          </div>
           <div className="flex flex-col gap-6">
-            <div className="grid gap-2">
+            <div className="grid gap-3">
               <Label htmlFor="email">Email</Label>
               <Input
                 id="email"
@@ -38,6 +21,18 @@ export function LoginFormTwo({
                 placeholder="m@example.com"
                 required
               />
+            </div>
+            <div className="grid gap-3">
+              <div className="flex items-center">
+                <Label htmlFor="password">Password</Label>
+                <Link
+                  href="/reset-password"
+                  className="ml-auto text-sm underline-offset-4 hover:underline"
+                >
+                  Forgot your password?
+                </Link>
+              </div>
+              <Input id="password" type="password" required />
             </div>
             <Button type="submit" className="w-full">
               Login

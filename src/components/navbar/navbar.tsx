@@ -1,7 +1,8 @@
 "use client";
-import { Github, Menu, Sun, Moon } from "lucide-react";
+import { Menu, Sun, Moon, LogIn } from "lucide-react";
 import { Toggle } from "@/src/components/ui/toggle";
 import { useState } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isNavToggled, setIsNavToggled] = useState<boolean>(false);
@@ -17,7 +18,13 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <Link
+          href="/"
+          className="flex items-center space-x-3 rtl:space-x-reverse text-2xl font-bold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-2xl dark:text-white"
+        >
+          SubscriFlow
+        </Link>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -32,22 +39,31 @@ const Navbar = () => {
           <ul className="font-medium flex flex-col items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-3 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
             <li>
               <a
-                href="https://github.com/RusiraJayatilake/MapleUI"
-                target="_blank"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white"
+                href={"/login"}
+                className="flex gap-1 items-center block py-2 px-2 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white"
               >
-                <Github />
+                <LogIn size={15} />
+                Login
               </a>
             </li>
             <li className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white">
               <Toggle onPressedChange={handleToggleChange}>
                 {isThemeToggled ? (
-                  <Sun className="h-4 w-4" />
+                  <Moon className="h-4 w-4" size={20} />
                 ) : (
-                  <Moon className="h-4 w-4" />
+                  <Sun className="h-4 w-4" size={20} />
                 )}
               </Toggle>
             </li>
+            {/* <li>
+              <a
+                href="https://github.com/RusiraJayatilake/MapleUI"
+                target="_blank"
+                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white"
+              >
+                <Github size={20} />
+              </a>
+            </li> */}
           </ul>
         </div>
       </div>
