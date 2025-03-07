@@ -54,7 +54,7 @@ const FAQ = () => {
         <Accordion
           type="single"
           collapsible
-          className="mt-8 space-y-4 md:columns-2 gap-4"
+          className="mt-8 space-y-4 mx-[180px]"
         >
           {faq.map(({ question, answer }, index) => (
             <AccordionItem

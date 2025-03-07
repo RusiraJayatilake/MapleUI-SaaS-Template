@@ -17,7 +17,7 @@ const plans = [
       "Choice of 2 filters",
       "2 retouch credits",
     ],
-    buttonText: "Get 20 portraits in 5 hours",
+    buttonText: "Subscribe",
   },
   {
     name: "Advanced",
@@ -32,7 +32,7 @@ const plans = [
       "Choice of 5 filters",
       "5 retouch credits",
     ],
-    buttonText: "Get 50 portraits in 3 hours",
+    buttonText: "Subscribe",
     isPopular: true,
   },
   {
@@ -47,7 +47,7 @@ const plans = [
       "Choice of 10 filters",
       "10 retouch credits",
     ],
-    buttonText: "Get 100 portraits in 1 hour",
+    buttonText: "Subscribe",
   },
 ];
 

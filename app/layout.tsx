@@ -9,16 +9,15 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Beautiful Shadcn UI Landing Page",
-  description:
-    "A beautiful landing page built with Shadcn UI, Next.js 15, Tailwind CSS, and Shadcn UI Blocks.",
+  title: "MapleUI - SaaS Template",
+  description: "Rewamp of a SaaS Template",
   keywords: [
     "Shadcn UI Landing Page",
     "Shadcn UI Blocks",
     "Shadcn UI",
     "Landing Page",
     "Tailwind CSS Landing Page",
-    "Beautiful Shadcn UI Landing Page",
+    "MapleUI - SaaS Template",
     "Next.js 15 Landing Page",
     "Simple Landing Page",
     "Landing Page Template",
@@ -28,10 +27,9 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Shadcn Landing Page",
     locale: "en_US",
-    url: "https://shadcn-landing-page.vercel.app",
-    title: "Shadcn Landing Page",
-    description:
-      "A beautiful landing page built with Shadcn UI, Next.js 15, Tailwind CSS, and Shadcn UI Blocks.",
+    url: "#",
+    title: "MapleUI - SaaS Template",
+    description: "Rewamp of a SaaS Template",
     images: [
       {
         url: "/og-image.jpg",
@@ -43,11 +41,11 @@ export const metadata: Metadata = {
   },
   authors: [
     {
-      name: "Akash Moradiya",
-      url: "https://shadcnui-blocks.com",
+      name: "Rusira Jayatilake",
+      url: "#",
     },
   ],
-  creator: "Akash Moradiya",
+  creator: "Rusira Jayatilake",
   icons: [
     {
       rel: "icon",
