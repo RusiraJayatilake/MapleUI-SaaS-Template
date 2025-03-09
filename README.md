@@ -1,4 +1,4 @@
-# Beautiful Shadcn UI Landing Page
+# Modern UI SaaS Template
 
 A modern, responsive SaaS temaplate built with Next.js, Tailwind CSS, and Shadcn UI, and Shadcn UI Blocks.
 
@@ -6,9 +6,9 @@ A modern, responsive SaaS temaplate built with Next.js, Tailwind CSS, and Shadcn
 
 [Live Demo](https://shadcn-ui-landing-page.vercel.app/)
 
-<!-- ## Preview -->
+## Preview
 
-<!-- ![Preview](./public/page-preview.png) -->
+![Preview](./public/page-preview.png)
 
 ## Features
 
@@ -64,3 +64,5 @@ This project is a base template for a landing page. It is built with Next.js, Ta
 ## Contributing
 
 If you have any suggestions or improvements, please create an issue or submit a pull request.
+
+vercel token - fkPcDKuLiWAlDwjA1C9SAwL2
