@@ -1,9 +1,8 @@
-import FAQ from "@/components/faq";
+// import FAQ from "@/components/faq";
 import Features from "@/components/features";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import { Navbar } from "@/components/navbar";
-import Pricing from "@/components/pricing";
 import Testimonial from "@/components/testimonial";
 
 export default function Home() {
@@ -12,9 +11,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Features />
-      <FAQ />
+      {/* <FAQ /> */}
       <Testimonial />
-      <Pricing />
+      {/* <Pricing /> */}
       <Footer />
     </>
   );

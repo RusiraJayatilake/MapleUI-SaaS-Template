@@ -24,7 +24,9 @@ export const NavigationSheet = () => {
       </SheetTrigger>
       <SheetContent>
         {/* <Logo /> */}
-        <h1 className="text-2xl">SubscriFlow</h1>
+        <Link className="text-2xl" href={"/"}>
+          MapleUI
+        </Link>
         <NavMenu orientation="vertical" className="mt-12" />
 
         <div className="mt-8 space-y-4">

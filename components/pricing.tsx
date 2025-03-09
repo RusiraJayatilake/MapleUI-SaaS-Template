@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import { CircleCheck } from "lucide-react";
+import Link from "next/link";
 
 const plans = [
   {
@@ -53,7 +54,7 @@ const plans = [
 
 const Pricing = () => {
   return (
-    <div id="pricing" className="max-w-screen-lg mx-auto py-12 xs:py-20 px-6">
+    <div className="mt-20 max-w-screen-lg mx-auto py-12 xs:py-20 px-6">
       <h1 className="text-4xl xs:text-5xl font-bold text-center tracking-tight">
         Pricing
       </h1>
@@ -88,13 +89,15 @@ const Pricing = () => {
                 </li>
               ))}
             </ul>
-            <Button
-              variant={plan.isPopular ? "default" : "outline"}
-              size="lg"
-              className="w-full mt-6 rounded-full"
-            >
-              {plan.buttonText}
-            </Button>
+            <Link href={"/payment"}>
+              <Button
+                variant={plan.isPopular ? "default" : "outline"}
+                size="lg"
+                className="w-full mt-6 rounded-full"
+              >
+                {plan.buttonText}
+              </Button>
+            </Link>
           </div>
         ))}
       </div>
