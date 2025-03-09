@@ -1,14 +1,14 @@
 # Beautiful Shadcn UI Landing Page
 
-A modern, responsive landing page template built with Next.js, Tailwind CSS, and Shadcn UI, and Shadcn UI Blocks.
+A modern, responsive SaaS temaplate built with Next.js, Tailwind CSS, and Shadcn UI, and Shadcn UI Blocks.
 
 ## Demo
 
 [Live Demo](https://shadcn-ui-landing-page.vercel.app/)
 
-## Preview
+<!-- ## Preview -->
 
-![Preview](./public/page-preview.png)
+<!-- ![Preview](./public/page-preview.png) -->
 
 ## Features
 
@@ -24,32 +24,32 @@ A modern, responsive landing page template built with Next.js, Tailwind CSS, and
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/akash3444/shadcn-ui-landing-page.git
-cd shadcn-ui-landing-page
+git clone https://github.com/RusiraJayatilake/MapleUI-SaaS-Template.git
+cd MapleUI-SaaS-Template
 ```
 
-2. To use Tailwind CSS v4.0:
+<!-- 2. To use Tailwind CSS v4.0:
 
 - Ensure you’re using Node.js 20 or higher.
 - Switch to the tailwind-v4 branch:
 
 ```bash
 git checkout tailwind-v4
-```
+``` -->
 
-3. Install dependencies:
+2. Install dependencies:
 
 ```bash
 npm install
 ```
 
-4. Start the development server:
+3. Start the development server:
 
 ```bash
 npm run dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
 ## Customization
 
